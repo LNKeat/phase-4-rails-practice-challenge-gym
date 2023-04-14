@@ -9,7 +9,7 @@ class ClientsController < ApplicationController
 
     def show 
         client = find_instance
-        render json: client, include: ClientMembershipSumSerializer
+        render json: client, serializer: ClientMembershipSumSerializer
     end
 
 
